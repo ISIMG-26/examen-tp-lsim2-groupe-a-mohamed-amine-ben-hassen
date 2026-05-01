@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Education - Cours</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="accueil.html" class="logo">Smart Education</a>
+            <ul class="nav-links">
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="matieres.html">Matières</a></li>
+                <li><a href="progression.html">Ma progression</a></li>
+                <li><a href="#" id="logoutBtn">Déconnexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 id="titreMatiere" style="margin-bottom: 10px;">Cours</h1>
+        <p style="color: var(--gris); margin-bottom: 25px;">Coche les cours terminés pour suivre ta progression.</p>
+
+        <section id="listeCours">
+            <p>Chargement...</p>
+        </section>
+
+        <section class="carte" style="margin-top: 30px;">
+            <h3>✅ Cours terminés</h3>
+            <ul id="coursTermines" style="list-style: none; margin-top: 15px;">
+                <li style="color: var(--gris);">Aucun cours terminé pour l'instant.</li>
+            </ul>
+        </section>
+
+        <div style="margin-top: 25px;">
+            <a href="matieres.html" class="btn btn-orange">← Retour aux matières</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Smart Education - LSIM 2 Examen TP 2025-2026</p>
+    </footer>
+
+    <script src="../js/cours.js"></script>
+</body>
+</html>

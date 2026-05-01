@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Education - Inscription</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="accueil.html" class="logo">Smart Education</a>
+            <ul class="nav-links">
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="matieres.html">Matières</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+                <li><a href="inscription.html" class="active">Inscription</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container" style="max-width: 500px;">
+        <section class="auth-panel">
+            <h2 style="text-align: center; margin-bottom: 25px;">Créer un compte</h2>
+
+            <form id="formInscription">
+                <div class="form-group">
+                    <label for="fullname">Nom complet</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Ton nom">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="exemple@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" placeholder="Min 8 caractères">
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">S'inscrire</button>
+            </form>
+
+            <div id="message" class="msg"></div>
+
+            <p style="text-align: center; margin-top: 20px;">
+                Déjà un compte ? <a href="connexion.html" style="color: var(--bleu);">Se connecter</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Smart Education - LSIM 2 Examen TP 2025-2026</p>
+    </footer>
+
+    <script src="../js/inscription.js"></script>
+</body>
+</html>
